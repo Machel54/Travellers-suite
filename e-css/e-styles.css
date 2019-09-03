@@ -2,7 +2,7 @@
 .booking-form {
 	background-color: #0a1f54;
 	padding: 50px 20px;
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .booking-form h4 {
 	font-family: 'Montserrat', sans-serif;
@@ -209,4 +209,6 @@ body{
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
+/* contact us */
