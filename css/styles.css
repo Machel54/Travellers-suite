@@ -1,212 +1,54 @@
-/* -- Booking Section */
-.booking-form {
-	background-color: #0a1f54;
-	padding: 50px 20px;
-	margin-bottom: 100px;
-}
-.booking-form h4 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	text-transform: uppercase;
-	border-right: 1px solid #1b3471;
-	margin: 0;
-	color: #fff;
-	letter-spacing: 1px;
-	line-height: 26px;
-}
-.booking-form h4 span {
-	font-weight: bold;
-	display: block;
-	font-size: 25px;
-}
-.booking-form form .form-group {
-	width: 20%;
-	float: left;
-	box-sizing: border-box;
-	padding: 0 20px;
-	margin-bottom: 0;
-	margin-top: 5px;
-	position: relative;
-}
-.booking-form .form-group > i {
-	position: absolute;
-	left: 20px;
-	color: #7d90be;
-	top: 0;
-}
-.booking-section2 .booking-form .form-group > i {
-	left: auto;
-	right: 50px;
-	top: 18px;
-	color: #909090;
-}
-.ui-datepicker {
-	padding: 10px;
-}
-.booking-form .form-group .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn),
-.booking-form2 .form-group .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-	width: 100%;
-}
-.booking-form .form-group .btn-default {
-	border: none;
-	border-radius: 0;
-	background-color: transparent;
-	border-bottom: 2px solid #1b3471;
-	color: #7d90be;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-.booking-form .form-group .btn-default:hover,
-.booking-form .form-group .btn-default:focus,
-.booking-form2 .form-group .btn-default:hover,
-.booking-form2 .form-group .btn-default:focus {
-	outline: none;
-	background-color: transparent;
-	color: #7d90be;
-	border-bottom-color: #1b3471;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-.booking-form .form-group .bootstrap-select.btn-group .dropdown-menu li a {
-	text-align: right;
-	color: #7d90be;
-}
-.booking-form .form-group .bootstrap-select.btn-group .dropdown-toggle .filter-option {
-	text-align: right;
-}
-.booking-form .form-group .bootstrap-select.btn-group .dropdown-toggle .caret {
-	right: auto;
-	left: 0;
-}
-.booking-section2 .booking-form .form-group .btn-default {
-	border: 1px solid #cfcfcf;
-    padding: 16px 32px;
-	border-radius: 5px;
-}
-.booking-form2 .form-group .btn-default {
-	padding: 11px 32px;
-	border-radius: 0;
-	border-color: #dadada;
-}
-.booking-section2 .booking-form .form-group .bootstrap-select.btn-group .dropdown-toggle .filter-option,
-.booking-section2 .booking-form .form-group .bootstrap-select.btn-group .dropdown-menu li a {
-	text-align: left;
-}
-.booking-section2 .booking-form .form-group .bootstrap-select.btn-group .dropdown-toggle .caret {
-	right: 32px;
-	left: auto;
-}
-.booking-section2 .booking-form .form-group .btn-default {
-	color: #909090;
-}
-.booking-section2 .booking-form .form-group .btn-default:hover,
-.booking-section2 .booking-form .form-group .btn-default:focus {
-	outline: none;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-.booking-form2 .form-group .bootstrap-select .dropdown-toggle:hover,
-.booking-form2 .form-group .bootstrap-select .dropdown-toggle:focus {
-	outline: none !important;
-}
-.booking-form2 .form-group .btn-default:hover,
-.booking-form2 .form-group .btn-default:focus {
-	border-bottom-color: #dadada;
-}
-.booking-form2 .form-group .bootstrap-select.btn-group .dropdown-menu li a span.text,
-.bootstrap-select.btn-group:hover .dropdown-toggle .filter-option {
-	color: #222222;
-}
-.booking-form2 .form-group .bootstrap-select.open .btn-default.active, 
-.booking-form2 .form-group .bootstrap-select.open .btn-default:active, 
-.booking-form2 .form-group .bootstrap-select.open > .dropdown-toggle.btn-default {
-	background-color: transparent;
-	border-color: #dadada;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-.booking-form .bootstrap-select.btn-group .dropdown-toggle .caret,
-.booking-form2 .bootstrap-select.btn-group .dropdown-toggle .caret {
-	top: 4px;
-	border: none;
-}
-.booking-section2 .booking-form .bootstrap-select.btn-group .dropdown-toggle .caret {
-	top: 35%;
-}
-.booking-section2 .booking-form .form-group .bootstrap-select.btn-group .dropdown-toggle .caret {
-	right: 42px;
-}
-.booking-form2 .bootstrap-select.btn-group .dropdown-toggle .caret {
-	right: 35px;
-	top: 13px;
-}
-.booking-form .bootstrap-select.btn-group .dropdown-toggle .caret::before,
-.booking-form2 .bootstrap-select.btn-group .dropdown-toggle .caret::before {
-	content:"\f107";
-	font-family:'FontAwesome';
-	color: #7d90be;
-}
-.booking-section2 .booking-form .bootstrap-select.btn-group .dropdown-toggle .caret::before {
-	color: #909090;
-}
-.booking-form2 .bootstrap-select.btn-group .dropdown-toggle .caret::before {
-	color: #afafaf;
-}
-.booking-form form .form-group input {
-	text-align: right;
-	padding-bottom: 14px;
-	padding-top: 0;
-	background-color: transparent;
-	border: none;
-	border-bottom: 2px solid #1b3471;
-	border-radius: 0;
-	font-size: 12px;
-	box-shadow: none;
-	outline: none;
-	color: #7d90be;
-}
-.booking-form form .form-group input::-webkit-input-placeholder {
-	color: #7d90be;
-}
-.booking-form form .form-group input:-moz-placeholder { /* Firefox 18- */
-	color: #7d90be;
-}
-.booking-form form .form-group input::-moz-placeholder {  /* Firefox 19+ */
-	color: #7d90be;
-}
-.booking-form form .form-group input:-ms-input-placeholder {  
-	color: #7d90be;
-}
-.booking-form form .form-group select {
-	background-color: transparent;
-	border: none;
-	border-bottom: 2px solid #1b3471;
-	border-radius: 0;
-	color: #7d90be;
-	padding-bottom: 9px;
-	padding-top: 0;
-	width: 100%;
-	font-size: 12px;
-	text-align: right;
-}
-.booking-form .form-group input[type="submit"] {
-	background-color: #abb320;	
-  width: 10%;
-  height: 8%;
-  padding-top: -14px;
-	text-align: center;
-	font-weight: 500;
-	font-size: 13px;
-	color: blacks;
-  text-transform: uppercase;
-  margin-top: -22px;
-  margin-left: 40px;
-  border-radius: 10px;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body{
-  background: url('https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+nav .logo {
+  float: left;
+}
+
+nav .logo img {
+  height: 80px;
+  transition: .5s;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav > ul > li > a {
+  line-height: 80px;
+  color: #262626;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  transition: .5s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #fff;
+  background: #ff0000;
+
 }
