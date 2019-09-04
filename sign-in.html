@@ -44,8 +44,10 @@ body {
     font: 16px/26px "Raleway", sans-serif;
     text-align: center;
     height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    background-size: cover;
+    background: -moz-linear-gradient(270deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(34,46,64,1)), color-stop(100%, rgba(81,195,184,1)));
+    background: -webkit-linear-gradient(270deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
+    background: linear-gradient(180deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
     overflow:hidden;
 }
 
@@ -216,6 +218,25 @@ a.button:hover {
         transform: translateY(-110%);
         opacity: 0;
     }
+}
+.terms, .recovery {
+    position: absolute;
+    z-index: 3;
+    margin: 40px 0 0;
+    padding: 1.5em 1em;
+    width: 100%;
+    height: calc(100% - 40px);
+    border-radius: 0;
+    background: #fff;
+    text-align: left;
+    overflow: auto;
+    will-change: transform;
+    -webkit-transform: translateY(-110%);
+    -moz-transform: translateY(-110%);
+    -o-transform: translateY(-110%);
+    transform: translateY(-110%);
+    opacity: 0;
+    border-radius: 0;
 }
 .terms.open, .recovery.open {
     -webkit-transform: translateY(0);
@@ -495,12 +516,11 @@ a.button:hover {
     margin: .0em auto .0em auto;
     text-align: center;
     font-size: 1.4em;
-    color: Blue;
+    color: #fff;
     line-height: .5em;
 }
 #slideshow p {
-  color: black;
-  font-size: 30px;
+  color: #fff;
   display: none;
 }
 #slideshow div {
@@ -519,17 +539,16 @@ a.button:hover {
 #slideshow .one {
     background-image: url("https://images.unsplash.com/photo-1566291242506-6f76e4ab7981?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80");
     background-repeat: no-repeat;
-    background-size: cover;
 }
 #slideshow .two {
     background-image: url("https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0% 50%;
 }
 #slideshow .three {
     background-image: url("https://images.unsplash.com/photo-1532018858449-57a81f84f0ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0% 5%;
 }
 
 /* FORM ELEMENTS */
@@ -936,18 +955,21 @@ input {
                     <!-- SLIDESHOW -->
                     <div id="slideshow">
                         <div class="one">
-                            <h2><span>SIMPLE</span></h2>
-                            <p>Great hotels,cottages,lodges and villas only one click away.</p>
+                            <h2><span>EVENTS</span></h2>
+                            <p>Sign up to attend any of hundreds of events nationwide</p>
                         </div>
                         <div class="two">
-                            <h2><span>AFFORDABLE</span></h2>
-                            <p>Friendly prices for all and sundry to enjoy.</p>
+                            <h2><span>LEARNING</span></h2>
+                            <p>Thousands of instant online classes/tutorials included</p>
                         </div>
                         <div class="three">
-                            <h2><span>JOIN US</span></h2>
-                            <p>Log In or Sign Up now to enjoy a great experience</p>
+                            <h2><span>GROUPS</span></h2>
+                            <p>Create your own groups and connect with others that share your interests</p>
                         </div>
-
+                        <div class="four">
+                            <h2><span></span></h2>
+                            <p>Thank You</p>
+                        </div>
                     </div>
                 </div>
                 <!-- LOGIN FORM -->
@@ -974,7 +996,9 @@ input {
                     				<label for="remember_me">Remember me</label>
                     				<input type="submit" class="button" value="Login">
                     			</form>
-
+                    			<div class="help-action">
+                    				<p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgot" href="#">Forgot your password?</a></p>
+                    			</div>
                     		</div>
                             <!-- TABS CONTENT SIGNUP -->
                     		<div id="signup-tab-content">
@@ -984,7 +1008,10 @@ input {
                     				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
                     				<input type="submit" class="button" value="Sign Up">
                     			</form>
-
+                    			<div class="help-action">
+                    				<p>By signing up, you agree to our</p>
+                    				<p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="agree" href="#">Terms of service</a></p>
+                    			</div>
                     		</div>
                     	</div>
                 	</div>
