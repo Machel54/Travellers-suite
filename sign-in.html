@@ -1,7 +1,6 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 
 <!DOCTYPE html><html class=''>
@@ -10,7 +9,6 @@
 <script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'>
 
 </script><meta charset='UTF-8'><meta name="robots" content="noindex">
-<link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
 <link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
 <link rel="canonical" href="https://codepen.io/dpinnick/pen/LjdLmo?limit=all&page=21&q=service" />
 
@@ -44,10 +42,8 @@ body {
     font: 16px/26px "Raleway", sans-serif;
     text-align: center;
     height: 100%;
-    background: -moz-linear-gradient(270deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(34,46,64,1)), color-stop(100%, rgba(81,195,184,1)));
-    background: -webkit-linear-gradient(270deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
-    background: linear-gradient(180deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
+    background-image: url('https://images.pexels.com/photos/458881/pexels-photo-458881.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
     overflow:hidden;
 }
 
@@ -516,7 +512,7 @@ a.button:hover {
     margin: .0em auto .0em auto;
     text-align: center;
     font-size: 1.4em;
-    color: #fff;
+    color: darkblue;
     line-height: .5em;
 }
 #slideshow p {
@@ -539,16 +535,19 @@ a.button:hover {
 #slideshow .one {
     background-image: url("https://images.unsplash.com/photo-1566291242506-6f76e4ab7981?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 #slideshow .two {
     background-image: url("https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80");
     background-repeat: no-repeat;
     background-position: 0% 50%;
+    background-size: cover;
 }
 #slideshow .three {
     background-image: url("https://images.unsplash.com/photo-1532018858449-57a81f84f0ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");
     background-repeat: no-repeat;
     background-position: 0% 5%;
+    background-size: cover;
 }
 
 /* FORM ELEMENTS */
@@ -955,21 +954,18 @@ input {
                     <!-- SLIDESHOW -->
                     <div id="slideshow">
                         <div class="one">
-                            <h2><span>EVENTS</span></h2>
-                            <p>Sign up to attend any of hundreds of events nationwide</p>
+                            <h2><span>SIMPLE</span></h2>
+                            <p>Great hotels, cottages,lodges and villas only one click away.</p>
                         </div>
                         <div class="two">
-                            <h2><span>LEARNING</span></h2>
-                            <p>Thousands of instant online classes/tutorials included</p>
+                            <h2><span>AFFORDABLE</span></h2>
+                            <p>Friendly prices for all and sun dry to enjoy.</p>
                         </div>
                         <div class="three">
-                            <h2><span>GROUPS</span></h2>
-                            <p>Create your own groups and connect with others that share your interests</p>
+                            <h2><span>JOIN US</span></h2>
+                            <p>Login In or Sign Up now to enjoy a great experience.</p>
                         </div>
-                        <div class="four">
-                            <h2><span></span></h2>
-                            <p>Thank You</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <!-- LOGIN FORM -->
@@ -996,9 +992,7 @@ input {
                     				<label for="remember_me">Remember me</label>
                     				<input type="submit" class="button" value="Login">
                     			</form>
-                    			<div class="help-action">
-                    				<p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgot" href="#">Forgot your password?</a></p>
-                    			</div>
+                    			
                     		</div>
                             <!-- TABS CONTENT SIGNUP -->
                     		<div id="signup-tab-content">
@@ -1008,10 +1002,7 @@ input {
                     				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
                     				<input type="submit" class="button" value="Sign Up">
                     			</form>
-                    			<div class="help-action">
-                    				<p>By signing up, you agree to our</p>
-                    				<p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="agree" href="#">Terms of service</a></p>
-                    			</div>
+                    			
                     		</div>
                     	</div>
                 	</div>

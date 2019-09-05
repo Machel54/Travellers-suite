@@ -1,4 +1,13 @@
-<<<<<<< HEAD
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 <script >/* LOGIN - MAIN.JS - dp 2017 */
 
 // LOGIN TABS
@@ -101,7 +110,6 @@ $(function() {
 //# sourceURL=pen.js
 
 </script>
-=======
 $(document).ready(function(){
   $("#imageDetails1").click(function(){
       $("#imageDetails1").toggle();
@@ -132,4 +140,3 @@ $(document).ready(function(){
     $("#para4").toggle();
   });
 });
->>>>>>> 58be535b4335426a5799e255cb37c19c373c0f99
