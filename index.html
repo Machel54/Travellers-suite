@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Travellers Suite</title>
+
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="e-css/e-styles.css" rel="stylesheet" type="text/css">
@@ -13,11 +14,11 @@
   <link href="h_css/h_styles.css" rel="stylesheet" type ="text/css">
   <script src="h_js/jquery-3.4.1.js" type="text/javascript"></script>
   <script src="h_js/h_scripts.js" type="text/javascript"></script>
+  <script src="a-js/jquery-3.4.1.js" charset="utf-8"></script>
+  <script src="a-js/a-scripts.js" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
   <script defer src="https:use.fontawesome.com/releases/v5.8.0/js/all.js"></script>
   <link rel="icon" href="https://2.bp.blogspot.com/-2JxBaEC7cV8/V8bvLBsDS0I/AAAAAAAADpY/2alOdIy_XnQ0Yy7bgRgBWKcu1ggwaht3ACLcB/s1600/Lowongan_Kerja_Logo_Travellers_Suites_Medan.jpg" type="image/x-icon">
-</head>
-
 </head>
 <body>
   <nav>
@@ -33,41 +34,39 @@
        <li><a href="#cont">Contact</a></li>
      </ul>
   </nav>
-
-  <br>
-  <br>
   <br>
   <br>
   <br>
   <br>
   <section class="hero">
     <h1>TRAVELLERS SUITE</h1>
-    <h2>Discover a hotel that defines a new dimension of luxury.</h2>    
+    <h2>Discover a hotel that defines a new dimension of luxury.</h2>
 
 <!-- container -->
 <div class="container">
-    <div class="booking-form container-fluid">
+    <div class="booking-form container-fluid" >
         <!-- <div class="col-md-2 col-sm-12 col-xs-12">
             <h4>Search <br>HOTEL</h4>
         </div> -->
-        
-        <form class="col-md-10 col-sm-12 col-xs-12">
+
+
+          <form class="col-md-12 col-sm-12 col-xs-12" id="sdgs">
                 <div class="form-group">
-                        <select class="selectpicker">
+                        <select class="selectpicker" id="cityPicked">
                             <option>CHOOSE CITY</option>
-                            <option>Nairobi</option>
-                            <option>Mombasa</option>
-                            <option>Nakuru</option>
-                            <option>Kisumu</option>
+                            <option value="nai">Nairobi</option>
+                            <option value="momb">Mombasa</option>
+                            <option value="naks">Nakuru</option>
+                            <option value="kis">Kisumu</option>
                         </select>
                     </div>
             <div class="form-group">
-                <i class="fa-calendar-minus-o"></i>
-                <input type="text" class="form-control" id="datepicker1" placeholder="ARRIVAL DATE" />
+                
+                <input type="date" class="form-control" id="datepicker1" placeholder="ARRIVAL DATE" />
             </div>
             <div class="form-group">
-                <i class="fa-calendar-minus-o"></i>
-                <input type="text" class="form-control" id="datepicker2" placeholder="DEPARTURE DATE" />
+                
+                <input type="date" class="form-control" id="datepicker2" placeholder="DEPARTURE DATE" />
             </div>
             <div class="form-group">
                 <select class="selectpicker">
@@ -84,16 +83,406 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-            </div>
-           
+            </div>  <br>
+
+            <div>
+                    <input type="submit" value="SEARCH" title="SEARCH"class="butn" >
+                </div>
         </form>
-        <div class="form-group">
-                <input type="submit" value="SEARCH" title="SEARCH">
-            </div>
-        
-    
-    </div>		
+
+
+    </div>
 </div>
+<!-- container /- -->
+  <!-- container -->
+</section>
+
+<section class="hotelViewing">
+<!--<div class="container">
+<div class="row">
+<div class="col-md-3">
+
+  <div class="card" style="width: 15rem;" id="NAIROBI1">
+    <div class="card-body">
+
+        <div class="card-body">
+          <h7 class="card-title">HOTELS IN NAIROBI</h7>
+          5 star hotels
+            <ul>
+              <li>Villa Rosa Kempinski </li><img src="images/images.jpeg">
+              <li>Nairobi Serena Hotel</li><img src="images/serena.jpeg">
+              <li>Hemingways Nairobi</li><img src="images/Hemingways.jpeg">
+
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="card" style="width: 15rem;"id="MOMBASA1">
+      <div class="card-body">
+
+          <div class="card-body">
+            <h7 class="card-title">HOTELS IN MOMBASA</h7>
+              5 Star hotels
+              <ul>
+                <li>Sarova Whitesand</li><img src=images/sarovaWhitesands.jpeg""><br>
+                <li>English point marina</li><img src="images/EnglishPointMarina.jpeg"><br>
+                <li>Mombasa continental</li><img src="images/mombasaContinental.jpeg"><br>
+              </ul>
+
+            </div>
+          </div>
+      </div>
+  </div>
+<div class="col-md-3">
+
+    <div class="card" style="width: 15rem;" id="KISUMU1">
+      <div class="card-body">
+
+          <div class="card-body">
+            <h7 class="card-title">HOTELS IN KISUMU</h7>
+            5 Star hotels
+            <ul>
+              <li>Accacia premier hotel</li><img src="images/AcaciaPremier.jpeg"><br>
+              <li>Whirlspring hotel</li><img src="images/whirlSpring.jpeg"><br>
+              <li>Imperial hotel</li><img src="images/Imperial.jpeg"><br>
+            </ul>
+
+            </div>
+          </div>
+      </div>
+</div>
+<div class="col-md-3">
+
+  <div class="card" style="width: 15rem;" id="NAKURU1">
+    <div class="card-body">
+
+        <div class="card-body">
+          <h7 class="card-title">HOTELS IN NAKURU</h7>
+          5 Star HOTELS
+          <ul>
+            <li>Sarova Woodlands</li><img src="images/sarovaWoodlands.jpeg"><br>
+            <li>Legacy Hotel</li><img src="images/legacy.jpeg"><br>
+            <li>Eagle Palace Hotel</li><img src="images/EaglePalaceNakuru.jpeg"><br>
+          </ul>
+
+          </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>-->
+<div class="container"id="NAIROBI1">
+<div class="row">
+<div  class="col-lg-12 col-md-12 mb-4">
+  <div class="card-deck">
+    <div class="card">
+    <img class="card-img-top" src="images/images.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Villa Rosa Kempinski</h5>
+      <p id="vp" class="card-text">Location</p>
+      <iframe id="kempinskiLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8355699240487!2d36.808601700000004!3d-1.2717203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1739fecabbff%3A0x3c71b10e5ded272e!2sVilla%20Rosa%20Kempinski!5e0!3m2!1sen!2ske!4v1567673476194!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="card-footer">
+      PRICES
+      <table>
+        <tr>
+          <th>EXPECTED PRICES</th>
+        </tr>
+        <tr>
+          <td>PRICE</td>
+          <td>$182 per night</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+  <img class="card-img-top" src="images/serena.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Serena Hotel</h5>
+    <p id="sh" class="card-text">Location</p>
+    <iframe id="serenaLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.811395108263!2d36.812320549894274!3d-1.2872675359846497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1259f35658c3%3A0xe9be921155a1051a!2sSerena%20Hotel!5e0!3m2!1sen!2ske!4v1567675890751!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div class="card-footer">
+    PRICES
+    <table>
+      <tr>
+        <th class>EXPECTED PRICES</th>
+      </tr>
+      <tr>
+        <td>PRICE</td>
+        <td>$207 per night</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+<img class="card-img-top" src="images/Hemingways.jpeg" alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">Hemingways Hotel</h5>
+  <p id="HH" class="card-text">Location</p>
+  <iframe id="hemingwaysLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7231008655435!2d36.70332604989452!3d-1.342522536062894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f04ad8148a465%3A0xc57393ba422cf504!2sHemingways%20Nairobi!5e0!3m2!1sen!2ske!4v1567675993599!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<div class="card-footer">
+  PRICES
+  <table>
+    <tr>
+      <th class>EXPECTED PRICES</th>
+    </tr>
+    <tr>
+      <td>PRICE</td>
+      <td>$484 per night </td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container"id="MOMBASA1">
+<div class="row">
+<div  class="col-lg-12 col-md-12 mb-4">
+  <div class="card-deck">
+    <div class="card">
+    <img class="card-img-top" src="images/sarovaWhitesands.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Sarova Whitesands</h5>
+      <p id="SW" class="card-text">Location.</p>
+      <iframe id="whitesandsLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.1271636112465!2d39.73102014991081!3d-3.994264545685291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dd5963208d5%3A0x740e7f0c37eee742!2sSarova%20Whitesands%20Beach%20Resort%20%26%20Spa%20Mombasa%20-%20Beach%20Hotel%20in%20Mombasa!5e0!3m2!1sen!2ske!4v1567676214741!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="card-footer">
+      PRICES
+      <table>
+        <tr>
+          <th class>EXPECTED PRICES</th>
+        </tr>
+        <tr>
+          <td>PRICE</td>
+          <td>$214 per night</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+  <img class="card-img-top" src="images/EnglishPointMarina.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">English Point Marina</h5>
+    <p id="EPM" class="card-text">Location</p>
+    <iframe id="pointLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.7928543236258!2d39.68281914991121!3d-4.05788204605731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184012fd692c8e49%3A0xc5b74ef15e7de030!2sHotel%20Englishpoint%20Mombasa!5e1!3m2!1sen!2ske!4v1567676471558!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div class="card-footer">
+    PRICES
+    <table>
+      <tr>
+        <th class>EXPECTED PRICES</th>
+      </tr>
+      <tr>
+        <td>PRICE</td>
+        <td>$196 per night</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+<img class="card-img-top" src="images/mombasaContinental.jpeg" alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">Mombasa Continental hotel</h5>
+  <p id="MCh" class="card-text">Location</p>
+  <iframe id="continentalHotellocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.1633389822655!2d39.74927304991066!3d-3.97063564554883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400eb951045ed9%3A0x9e56c65b524d6c33!2sMombasa%20Continental%20Resort!5e1!3m2!1sen!2ske!4v1567676700257!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<div class="card-footer">
+  PRICES
+  <table>
+    <tr>
+      <th class>EXPECTED PRICES</th>
+    </tr>
+    <tr>
+      <td>PRICE</td>
+      <td>$106 night</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container"id="KISUMU1">
+<div class="row">
+<div  class="col-lg-12 col-md-12 mb-4">
+  <div class="card-deck">
+    <div class="card">
+    <img class="card-img-top" src="images/AcaciaPremier.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Acacia Premier</h5>
+      <p id="AP" class="card-text">Location.</p>
+      <iframe id="acaciaPremierLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4996190375673!2d34.749476949889385!3d-0.10718373550509609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa4bff94d4e49%3A0xa280ce4c56b9612b!2sACACIA%20HOTEL%20KISUMU!5e1!3m2!1sen!2ske!4v1567676919364!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="card-footer">
+      PRICES
+      <table>
+        <tr>
+          <th class>EXPECTED PRICES</th>
+        </tr>
+        <tr>
+          <td>PRICE</td>
+          <td>$150 per night</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+  <img class="card-img-top" src="images/whirlSpring.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Whirlspring</h5>
+    <p id="W" class="card-text">Location.</p>
+    <iframe id="whirlSpringLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.499887208768!2d34.755114849889345!3d-0.10479383550643771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa571b18fd87d%3A0xc4addc1a7ae01d8e!2sWhirlspring%20Hotel%20Kisumu!5e1!3m2!1sen!2ske!4v1567677198643!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div class="card-footer">
+    PRICES
+    <table>
+      <tr>
+        <th class>EXPECTED PRICES</th>
+      </tr>
+      <tr>
+        <td>PRICE</td>
+        <td>$100 per night</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+<img class="card-img-top" src="images/Imperial.jpeg" alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">Imperial</h5>
+  <p id="I" class="card-text">Location.</p>
+  <iframe id="imperialLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4998803790195!2d34.75333594995368!3d-0.10393163550707932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa5f53b6125c3%3A0xfc1abb17327fc7c3!2sImperial%20hotel!5e1!3m2!1sen!2ske!4v1567677361507!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<div class="card-footer">
+  PRICES
+  <table>
+    <tr>
+      <th class>EXPECTED PRICES</th>
+    </tr>
+    <tr>
+      <td>PRICE</td>
+      <td>$50 per night</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container"id="NAKURU1">
+<div class="row">
+<div  class="col-lg-12 col-md-12 mb-4">
+  <div class="card-deck">
+    <div class="card">
+    <img class="card-img-top" src="images/sarovaWoodlands.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Sarova Woodlands</h5>
+      <p id="SW" class="card-text">Location.</p>
+      <iframe id="sarovaWoodlandsLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4636554022845!2d36.08659194989!3d-0.28182933543256183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298d8825358867%3A0xe8ee11592cfe9180!2sSarova%20Woodlands%20Hotel%20%26%20Spa%20Nakuru%20-%20Hotel%20in%20Nakuru%20Town!5e1!3m2!1sen!2ske!4v1567677492741!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="card-footer">
+      PRICES
+      <table>
+        <tr>
+          <th class>EXPECTED PRICES</th>
+        </tr>
+        <tr>
+          <td>PRICE</td>
+          <td>$150 per night</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+  <img class="card-img-top" src="images/legacy.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Legacy</h5>
+    <p id="L" class="card-text">Location.</p>
+    <iframe id="legacyLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.462137830205!2d36.07342334988999!3d-0.28687043543120255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298d92df643c9d%3A0xd43677865f089266!2sThe%20Legacy%20Hotel%20%26%20Suites!5e1!3m2!1sen!2ske!4v1567681874758!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div class="card-footer">
+    EXPECTED PRICES
+    <table class="table">
+      <tr>
+        <th class="thead-dar">EXPECTED PRICES</th>
+      </tr>
+      <tr>
+        <td>PRICE</td>
+        <td>$189 per night</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+<img class="card-img-top" src="images/EaglePalaceNakuru.jpeg" alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">Eagle Palace Nakuru</h5>
+  <p id="EP">Location</p>
+  <iframe id="eaglePalaceNakuruLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.461700957547!2d36.07287094995443!3d-0.28797063543106943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298decd318cadf%3A0x1ad054387b9aefa2!2sEagle%20palace%20hotel!5e1!3m2!1sen!2ske!4v1567681954350!5m2!1sen!2ske" width="280" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<div class="card-footer">
+  PRICES
+  <table>
+    <tr>
+      <th class>EXPECTED PRICES</th>
+    </tr>
+    <tr>
+      <td>PRICE</td>
+      <td>$61</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+ 
 <!-- container /- -->
   <!-- container -->
   <div class="container-fluid" id="About">
@@ -115,7 +504,7 @@
   </div>
   </div>
       <!-- Section: Team v.1 -->
-      <div class="container" id=team id="overlay">
+      <div id="team">
     <!-- Section heading -->
     <h2 class="h1-responsive font-weight-bold my-12">Project Team</h2>
   <!-- Grid row 1 -->
@@ -252,5 +641,3 @@
 </body>
 </html>
 
-
- 
