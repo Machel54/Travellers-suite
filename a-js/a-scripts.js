@@ -1,10 +1,11 @@
 
 
-$(document).ready(function() {
+$(document).ready(function(){
+  $("form#sdgs").submit(function(event){
+    event.preventDefault();
 
 
 
-  $("#cityPicked").click(function(){
     var selectedVariable=$("#cityPicked option:selected").val();
     if(selectedVariable==="nai"){
     $("#NAIROBI1").show();
@@ -65,45 +66,7 @@ $(document).ready(function() {
       $("#eaglePalaceNakuruLocation").toggle();
     });
 
-  
-  });
+
+
 });
-
-
-
-/*<h7 class="card-title">HOTELS IN NAIROBI</h7>
-5 star hotels
-  <ul>
-    <li>Villa Rosa Kempinski </li><img src="images/images.jpeg">
-    <li>Nairobi Serena Hotel</li><img src="images/serena.jpeg">
-    <li>Hemingways Nairobi</li><img src="images/Hemingways.jpeg">
-
-  </ul>
-
-
-
-  <h7 class="card-title">HOTELS IN MOMBASA</h7>
-    5 Star hotels
-    <ul>
-      <li>Sarova Whitesand</li><img src=images/sarovaWhitesands.jpeg""><br>
-      <li>English point marina</li><img src="images/EnglishPointMarina.jpeg"><br>
-      <li>Mombasa continental</li><img src="images/mombasaContinental.jpeg"><br>
-    </ul>
-
-
-    <h7 class="card-title">HOTELS IN KISUMU</h7>
-    5 Star hotels
-    <ul>
-      <li>Accacia premier hotel</li><img src="images/AcaciaPremier.jpeg"><br>
-      <li>Whirlspring hotel</li><img src="images/whirlSpring.jpeg"><br>
-      <li>Imperial hotel</li><img src="images/Imperial.jpeg"><br>
-    </ul>
-
-
-    <h7 class="card-title">HOTELS IN NAKURU</h7>
-    5 Star HOTELS
-    <ul>
-      <li>Sarova Woodlands</li><img src="images/sarovaWoodlands.jpeg"><br>
-      <li>Legacy Hotel</li><img src="images/legacy.jpeg"><br>
-      <li>Eagle Palace Hotel</li><img src="images/EaglePalaceNakuru.jpeg"><br>
-    </ul>*/
+});
