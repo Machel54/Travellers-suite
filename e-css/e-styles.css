@@ -117,8 +117,8 @@
 .bootstrap-select.btn-group:hover .dropdown-toggle .filter-option {
 	color: #222222;
 }
-.booking-form2 .form-group .bootstrap-select.open .btn-default.active, 
-.booking-form2 .form-group .bootstrap-select.open .btn-default:active, 
+.booking-form2 .form-group .bootstrap-select.open .btn-default.active,
+.booking-form2 .form-group .bootstrap-select.open .btn-default:active,
 .booking-form2 .form-group .bootstrap-select.open > .dropdown-toggle.btn-default {
 	background-color: transparent;
 	border-color: #dadada;
@@ -174,7 +174,7 @@
 .booking-form form .form-group input::-moz-placeholder {  /* Firefox 19+ */
 	color: #7d90be;
 }
-.booking-form form .form-group input:-ms-input-placeholder {  
+.booking-form form .form-group input:-ms-input-placeholder {
 	color: black;
 }
 .booking-form form .form-group select {
@@ -189,20 +189,7 @@
 	font-size: 12px;
 	text-align: right;
 }
-.booking-form .form-group input[type="submit"] {
-	background-color: #5d6665;	
-  width: 10%;
-  height: 8%;
-  padding-top: -14px;
-	text-align: center;
-	font-weight: 500;
-	font-size: 13px;
-	color: white;
-  text-transform: uppercase;
-  margin-top: -22px;
-  margin-left: 40px;
-  border-radius: 10px;
-}
+
 
 body{
   background: url('https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -211,4 +198,95 @@ body{
   background-repeat: no-repeat;
 
 }
-
+.hotelViewing{
+	color: black;
+}
+#NAIROBI1{
+	display: none;
+}
+#MOMBASA1{
+	display: none;
+}
+#KISUMU1{
+	display:none;
+}
+#NAKURU1{
+display:none;
+}
+#NAIROBI2{
+	display: none;
+}
+#MOMBASA2{
+	display: none;
+}
+#KISUMU2{
+	display:none;
+}
+#NAKURU2{
+display:none;
+}
+#NAIROBI3{
+	display: none;
+}
+#MOMBASA3{
+	display: none;
+}
+#KISUMU3{
+	display:none;
+}
+#NAKURU3{
+display:none;
+}
+.flex{
+	justify-content: space-around;
+	display: inline-flex;
+}
+#kempinskiLocation{
+	display: none;
+}
+#serenaLocation{
+	display: none;
+}
+#hemingwaysLocation{
+	display: none;
+}
+#whitesandsLocation{
+	display: none;
+}
+#pointLocation{
+	display:none;
+}
+#continentalHotellocation{
+	display: none;
+}
+#acaciaPremierLocation{
+	display: none;
+}
+#whirlSpringLocation{
+	display: none;
+}
+#imperialLocation{
+	display: none;
+}
+#sarovaWoodlandsLocation{
+	display: none;
+}
+#legacyLocation{
+	display: none;
+}
+#eaglePalaceNakuruLocation{
+	display: none;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+	font-size: 10px;
+}
+.butn{
+	margin-left: 480px;
+	border-radius: 10px;
+	background-color: blue;
+	margin-top: 25px;
+}
