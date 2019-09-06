@@ -27,8 +27,9 @@
        <li><a href="index.html" class="active">Home</a></li>
        <li><a href="#destinations">Destination</a></li>
        <li><a href="sign-in.html">Register</a></li>
+       <li><a href="#About">About</a></li>
        <li><a href="#team">Team</a></li>
-       <li><a href="#contact">Contact</a></li>
+       <li><a href="#cont">Contact</a></li>
      </ul>
   </nav>
 
@@ -94,10 +95,14 @@
 </div>
 <!-- container /- -->
   <!-- container -->
-</section> 
+  <div class="container-fluid" id="About">
+    <h2>ABOUT US</h2>
+    <p>Travellers suite is a website that is programmed to help users to be able to locate a place of accomodation if they are new to a place or if they are out on work.</p>
+    <p>The website locates for you hotels in a city and the price it cost to stay a night there. </p>
+  </div>
 
-    <div class="container  id="destinations">
-    <h2 class="h1-responsive font-weight-bold my-5">Destinations</h2>
+    <div class="container-fluid"  id="destinations">
+    <h2 class="h1-responsive font-weight-bold my-5">DESTINATION</h2>
         <div class="row">
         <div class="col-md-3"><img src="h_img/nairobi.jpeg" alt="..." class="img-thumbnail" id="img1"><b><p>NAIROBI</p></b><p id="para1">Nairobi is a lively city, full of culture, historically rich, home to beautiful national parks and wildlife. Nairobi's vibrancy makes it the most amazing city in the world..</p></div>
         <div class="col-md-3"><img src="https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="..." class="img-thumbnail" id="img2"><b><p>MOMBASA</p></b><P id="para2">Mombasa is a regional cultural hub, the most popular destination for beach safaris in Kenya .</p></div>
@@ -184,12 +189,12 @@
   </div>
   </div>
   <!-- Section: Team v.1 -->
-  !-- contact -->
+  <!-- contact -->
     <div class="container1">
             <h3></b>CONTACT US</b></h3>
         <div class="row">
             <div class="col-md-6">
-                <div class="cont">
+                <div id="cont">
                         <br><h6><u>Phone Number</u></h6>
                         <i class="social-icon fas fa-phone fa-2x"></i><p>+254 720314121</p>
                         <p>+254 720314226</p>
@@ -204,11 +209,13 @@
                 <div class="contact">
                 <h5><i class="social-icon fas social-icons fa-envelope fa-2x"></i>Send us Message</h5>
                 <form class="form">
-                    <input type="Name" placeholder="Name.."required size="40px" margin-left="10px"> <br><br><input type="Name" placeholder="email.."required size="40px"><br><br>
-                    <div class="message">
-                        <textarea rows="5" cols="41" placeholder="Your message here.." required ></textarea>
-                    </div><br>
-                 <input class="submit" type="submit" name="submit">
+                    <input name="name" id="name" placeholder="Name"required>
+                    <input name="email" id="email" type="email" placeholder="Email"required>
+                    <br>
+                    <textarea name="message" id="message" placeholder="Type here"required></textarea><br>
+                    <input id="submit" name="submit" type="submit" value="submit"> 
+                    
+                  
                  </form>
                  <div class="social">
                         <div class="row icon">
@@ -238,6 +245,7 @@
         </div><br>
     </div>    
         <!-- end of contact -->
+       
     <footer>
         <h6><b>TRAVELLERS SUITE LTD</b></h6>
         <h6><b>2019</b></h6>

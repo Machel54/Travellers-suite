@@ -15,15 +15,7 @@ body {
   margin-bottom: 100px;
 };
 
-.jumbotron jumbotron-fluid{
-display: flex;
-align-items: center;
-height: 100;
-}
 
-#destinations{
-  text-align: center;
-}
 
 .img-thumbnail{
   height: 200px;
