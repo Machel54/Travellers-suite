@@ -1,8 +1,6 @@
 
 
 $(document).ready(function() {
-  $("#sdg").click(function(){
-    
 
 
 
@@ -67,7 +65,7 @@ $(document).ready(function() {
       $("#eaglePalaceNakuruLocation").toggle();
     });
 
-    });
+  
   });
 });
 
